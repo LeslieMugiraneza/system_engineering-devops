@@ -6,8 +6,8 @@ handle_sigterm() {
     echo "I am invincible!!!"
 }
 
-# Set up signal handler for SIGTERM
-trap handle_sigterm SIGTERM
+# Set up signal handler for SIGTERM (signal 15)
+trap handle_sigterm 15
 
 while true
 do
