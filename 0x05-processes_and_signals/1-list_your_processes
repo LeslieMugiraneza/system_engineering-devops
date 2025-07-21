@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Displays only the users of currently running processes
+# A Bash script that displays a list of currently running processes for all users with hierarchy
 
-ps -eo user --no-headers | sort | uniq | awk 'BEGIN {print "USER"} {print}'
+ps auxf
